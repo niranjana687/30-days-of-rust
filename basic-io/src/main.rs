@@ -8,6 +8,7 @@ fn main() {
     let n = n.trim().parse::<i32>().expect("expected integer");
 
     io::stdin().read_line(&mut s).unwrap();
+
     
     println!("{}", n*2);
     println!("{}",s);
