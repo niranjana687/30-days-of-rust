@@ -11,12 +11,7 @@ fn main() {
     
     for a in i.iter() {
         print!("{} ", a);
-    }
-
-
-
-    
-    
+    }    
 
 }
 
