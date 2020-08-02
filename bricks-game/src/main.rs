@@ -11,7 +11,7 @@ fn main() {
    let mut p = 0;
    let mut m = 0;
 
-   for i in 1..n+1 {
+   for i in 1..=n {
         p += i;
         m += i*2;
         if p + m < n && c < i {
