@@ -16,4 +16,12 @@ fn main() {
         println!("{}", t_res);
     }
 
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
+
+    let s_len = input.len();
+    
+   
+
+
 }
