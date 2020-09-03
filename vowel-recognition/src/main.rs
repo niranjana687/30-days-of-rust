@@ -26,6 +26,7 @@
 
 use std::io;
 use regex::Regex;
+
 fn main() {
     let mut num = String::new();
     io::stdin().read_line(&mut num).unwrap();
