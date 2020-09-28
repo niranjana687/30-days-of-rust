@@ -213,7 +213,7 @@ pub mod minesweeper {
                 for x in 0..self.width {
                     self.cell[x][y].print();
                 }
-                println!("| | {0: < 10}| ", );
+                println!("│");
             }
             print!("└");
             for _ in 0..self.width {
