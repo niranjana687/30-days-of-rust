@@ -7,7 +7,7 @@ fn main() {
     let mut count_x = 0;
     let mut count_y = 0;
     let var_name = input.chars();
-    for i in var_name {
+    for i in var_name {ßßß
         
         if i == 'z' {
             count_x += 1; 
