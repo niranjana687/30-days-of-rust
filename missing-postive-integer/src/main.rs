@@ -4,19 +4,22 @@ fn main() {
 
 fn find_kth_positive(arr: Vec<i32>, k: i32) -> i32 {
    
-    let mut missing_array = vec![];
-    let last = arr.last().unwrap();
-    let mut num = 1;
-    
-    for i in arr.iter() {
-        
-            while num != *i || num > *last {
-                missing_array.push(num);
-                num += 1;
-            }
-    }
+    let mut num = 0;
+    let mut pos = 0;
 
-    let pos = k-1;
-    return missing_array[pos as usize];
+    for i in arr.iter() {
+        if pos != k {
+            if num != *i {
+                num += 1;
+                pos += 1;
+            } else {
+                num += 2;
+                
+            }
+        }else {
+            return num;
+        }
+        
+    } return num;
     
 }
