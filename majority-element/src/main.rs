@@ -3,29 +3,20 @@ fn main() {
 }
 
 
-fn majority_element(nums: Vec<i32>) -> i32 {
-    use std::vec::IntoIter<i32>;
-
-        let size = nums.len();
-        let mut nums = nums;
-        let new = nums.sort();
-        nums.into_iter().unique().collect();
-        
-
-
-        for i in nums.iter() {
-        let mut count = 0;
-        if count < new.len()/2 {
-            for j in new.iter() {
-                if j == i {
-                    count += 1;
-                } else {
-                    break;
+fn majority_element(nums: Vec<i32>) -> i32  {
+    
+        for i in 0..nums.len() {
+            let mut cnt = 0;
+            for j in i..nums.len() {
+                if nums[j] == nums[i] {
+                    cnt += 1;
                 }
-            } break;
-        } else {
-            return count;
+                if cnt > nums.len() / 2 {
+                    return nums[i];
+                }
+            }
         }
-           
-        }
-}
+        0
+    }
+    
+    
