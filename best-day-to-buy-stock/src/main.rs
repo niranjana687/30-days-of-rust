@@ -3,7 +3,7 @@ fn main() {
 }
 
 fn max_profit(prices: Vec<i32>) -> i32 {
-    let mut buying_price = prices[0]; 
+    let mut buying_price = prices.get(0).cloned().unwrap_or_default(); 
     let mut profit = 0; 
 
     for i in 1..prices.len() {
@@ -12,7 +12,7 @@ fn max_profit(prices: Vec<i32>) -> i32 {
         } else if prices[i] -  buying_price > profit {
             profit = prices[i] -  buying_price
         }
-    }profit
+    }profit 
     
 
 }
