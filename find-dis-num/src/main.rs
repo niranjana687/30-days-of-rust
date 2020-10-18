@@ -3,7 +3,7 @@ fn main() {
 }
 
 
-fn find_disappeared_numbers(mut nums: Vec<i32>) -> Vec<i32>  {
+fn find_disappeared_numbers(mut nums: Vec<i32>) -> Vec<i32>   {
         
     let mut copy = nums;
         copy.sort();
