@@ -7,7 +7,8 @@ fn main() {
     let mut array = vec![];
     
     for num in line.split_whitespace() {
-         array.push(num.parse::<i64>().expect("not an integer!"));
+         array.push(num.parse::<u32>().expect("not an integer!"));
     }
-    println!("{}", i);
+    array.sort();
+
 }
